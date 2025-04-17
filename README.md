@@ -1,4 +1,4 @@
-## 👋 Assalomu alaykum! Men [Ismingni yoz] 😄
+## 👋 Assalomu alaykum!
 
 ### 💡 Men haqimda
 
