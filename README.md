@@ -50,4 +50,4 @@
 ---
 
 ## 📞 Muloqot uchun
-[![Telegram](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram&labelColor=blue)](https://t.me/@d_jumanazarov)
+[![Telegram](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram&labelColor=blue)](https://t.me/d_jumanazarov)
