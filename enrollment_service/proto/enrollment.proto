@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package enrollment;
+
+service EnrollmentService {
+  rpc EnrollStudent(EnrollRequest) returns (EnrollResponse);
+  rpc GetEnrolledStudents(CourseIdRequest) returns (StudentListResponse);
+}
+
+message EnrollRequest {
+  int32 student_id = 1;
+  int32 course_id = 2;
+}
+
+message EnrollResponse {
+  int32 enrollment_id = 1;
+  string message = 2;
+}
+
+message CourseIdRequest {
+  int32 course_id = 1;
+}
+
+message Student {
+  int32 id = 1;
+  int32 student_id = 2;
+  int32 course_id = 3;
+}
+
+message StudentListResponse {
+  repeated Student students = 1;
+}

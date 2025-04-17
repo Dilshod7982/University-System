@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package course;
+
+service CourseService {
+  rpc GetCourse(CourseIdRequest) returns (CourseResponse);
+  rpc CreateCourse(CreateCourseRequest) returns (CourseResponse);
+  rpc DeleteCourse(CourseIdRequest) returns (Empty);
+}
+
+message CourseIdRequest {
+  int32 id = 1;
+}
+
+message CreateCourseRequest {
+  string name = 1;
+  string description = 2;
+  int32 teacher_id = 3;
+}
+
+message CourseResponse {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  int32 teacher_id = 4;
+}
+
+message Empty {}
